@@ -26,4 +26,7 @@ body{
     background-size: cover;
     /* image at the top will stay the same when resizing the browers */
     background-position: top;
+
+    /* shape the background iamge */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
