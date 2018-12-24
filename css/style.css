@@ -13,13 +13,15 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: gray;
+    color: yellow;
+    padding: 30px;
 }
 
 .header{
     /* make 95% of viewport height */
     height: 95vh;
-    background-image: url(../img/background.jpg);
+    /* to right means start light color from left and dark color from the right */
+    background-image: linear-gradient(to right bottom, rgb(89, 237, 220, 0.5), rgb(96, 129, 220, 0.8)), url(../img/background.jpg);
     /* adjust the size of the image to fit the element that is inside of the box */
     background-size: cover;
     /* image at the top will stay the same when resizing the browers */
