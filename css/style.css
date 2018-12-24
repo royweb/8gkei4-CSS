@@ -1,0 +1,17 @@
+/*Note: By default, browers has differnt margin and padding to some elements*/
+
+/*This is the universal selector, it apply to all element*/
+*{
+    margin: 0;
+    padding: 0;
+    /*This will prevent the padding from being added to the width and height of the box*/
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: gray;
+} 
