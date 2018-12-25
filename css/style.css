@@ -26,7 +26,18 @@ body{
     background-size: cover;
     /* image at the top will stay the same when resizing the browers */
     background-position: top;
+    position: relative;
 
     /* shape the background iamge */
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo{
+    height: 35px;
 }
