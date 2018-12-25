@@ -125,6 +125,7 @@ body{
     display: inline-block;
     border-radius: 100px;
     transition: all 0.3s;
+    position: relative;
 }
 
 .btn:hover{
@@ -140,4 +141,29 @@ body{
 .btn-white{
     background-color: white;
     color: grey;
+}
+
+/* this is behind the button */
+.btn::after{
+    content: "";
+    display: inline-block;
+    /* this is treated like a child of the button */
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    /* absolute position must have reference */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* this wil put it behind the button */
+    z-index: -1;
+}
+
+.btn-white::after{
+    background-color: white;
+}
+
+.btn:hover::after{
+    /* scale increase the element */
+    transform: scale(1.5);
 }
