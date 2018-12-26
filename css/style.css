@@ -116,6 +116,20 @@ body{
     }
 }
 
+@keyframes moveInBottom{
+    /* start of the animation */
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    /* end of the animation */
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 .btn:link,
 .btn:visited{
     text-transform: uppercase;
@@ -157,6 +171,7 @@ body{
     left: 0;
     /* this wil put it behind the button */
     z-index: -1;
+    transition: all 0.5s;
 }
 
 .btn-white::after{
@@ -165,5 +180,16 @@ body{
 
 .btn:hover::after{
     /* scale increase the element */
-    transform: scale(1.5);
+    transform: scaleX(1.4) scaleY(1.6);
+    /* fade the shadow button */
+    opacity: 0;
+}
+
+.btn-animated{
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-delay: 0.75s;
+    animation-timing-function: ease-out;
+    /* set the opacity to 0 on the button before the animation start */
+    animation-fill-mode: backwards;
 }
