@@ -52,7 +52,7 @@ body {
   text-align: center; }
 
 .heading-primary {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
@@ -131,7 +131,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: white;
+  background-color: #ffffff;
   color: #73808c; }
 
 /* this is behind the button */
@@ -151,7 +151,7 @@ body {
   transition: all 0.5s; }
 
 .btn--white::after {
-  background-color: white; }
+  background-color: #ffffff; }
 
 .btn:hover::after {
   /* scale increase the element */
