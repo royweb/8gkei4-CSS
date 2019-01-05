@@ -1,0 +1,67 @@
+.btn{
+    &:link,
+    &:visited{
+        text-transform: uppercase;
+        /* remove the link and color on a */
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all 0.3s;
+        position: relative;
+        font-size: 1.6rem;
+    }
+
+    &:hover{
+        transform: translateY(-3px);
+        /* add blurry shadow */
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+        &::after{
+            /* scale increase the element */
+            transform: scaleX(1.4) scaleY(1.6);
+            /* fade the shadow button */
+            opacity: 0;
+        }
+    }
+
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    }
+
+    &--white{
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after{
+            background-color: $color-white;
+        }    
+    }
+
+    /* this is behind the button */
+    &::after{
+        content: "";
+        display: inline-block;
+        /* this is treated like a child of the button */
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        /* absolute position must have reference */
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* this wil put it behind the button */
+        z-index: -1;
+        transition: all 0.5s;
+    }
+
+    &--animated{
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-delay: 0.75s;
+        animation-timing-function: ease-out;
+        /* set the opacity to 0 on the button before the animation start */
+        animation-fill-mode: backwards;
+    }
+}
