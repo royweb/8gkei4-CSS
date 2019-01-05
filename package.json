@@ -1,0 +1,22 @@
+{
+  "name": "lake",
+  "version": "1.0.0",
+  "description": "From Udemy - Advanced CSS and SASS by Jonas Schmedtmann\r --------------------------------------------------------\r Practicing on how to use css.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royweb/8gkei4-CSS.git"
+  },
+  "author": "roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/royweb/8gkei4-CSS/issues"
+  },
+  "homepage": "https://github.com/royweb/8gkei4-CSS#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
