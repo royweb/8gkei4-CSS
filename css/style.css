@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: yellow;
+  color: #73808c;
   padding: 3rem;
   /*This will prevent the padding from being added to the width and height of the box*/
   box-sizing: border-box; }
@@ -132,7 +132,7 @@ body {
 
 .btn--white {
   background-color: white;
-  color: grey; }
+  color: #73808c; }
 
 /* this is behind the button */
 .btn::after {
