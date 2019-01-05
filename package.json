@@ -4,7 +4,7 @@
   "description": "From Udemy - Advanced CSS and SASS by Jonas Schmedtmann\r --------------------------------------------------------\r Practicing on how to use css.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",

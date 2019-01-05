@@ -1,0 +1,213 @@
+/*Note: By default, browers has differnt margin and padding to some elements*/
+
+$color-primary: #00bfff;
+$color-primary-light: #00ffbf;
+$color-primary-dark: #0040ff;
+
+
+/*This is the universal selector, it apply to all element*/
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    /* this will inherit the body */
+    box-sizing: inherit;
+}
+
+html{
+    /* 1 rem is equal to 10px */
+    /* default bowser size is 16px */
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: yellow;
+    padding: 3rem;
+
+    /*This will prevent the padding from being added to the width and height of the box*/
+    box-sizing: border-box;
+}
+
+.header{
+    /* make 95% of viewport height */
+    height: 95vh;
+    /* to right means start light color from left and dark color from the right */
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.8)), url(../img/background.jpg);
+    /* adjust the size of the image to fit the element that is inside of the box */
+    background-size: cover;
+    /* image at the top will stay the same when resizing the browers */
+    background-position: top;
+    position: relative;
+
+    /* shape the background iamge */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.header__logo{
+    height: 3.5rem;
+}
+
+.header__text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary{
+    color: white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary--main{
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary--sub{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2.1rem;
+
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft{
+    /* start of the animation */
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80%{
+        transform: translateX(2rem);
+    }
+
+    /* end of the animation */
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight{
+    /* start of the animation */
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80%{
+        transform: translateX(-2rem);
+    }
+
+    /* end of the animation */
+    100%{
+        opacity: 1;
+         transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom{
+    /* start of the animation */
+    0%{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    /* end of the animation */
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    /* remove the link and color on a */
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    /* add blurry shadow */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white{
+    background-color: white;
+    color: grey;
+}
+
+/* this is behind the button */
+.btn::after{
+    content: "";
+    display: inline-block;
+    /* this is treated like a child of the button */
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    /* absolute position must have reference */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* this wil put it behind the button */
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.btn--white::after{
+    background-color: white;
+}
+
+.btn:hover::after{
+    /* scale increase the element */
+    transform: scaleX(1.4) scaleY(1.6);
+    /* fade the shadow button */
+    opacity: 0;
+}
+
+.btn--animated{
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-delay: 0.75s;
+    animation-timing-function: ease-out;
+    /* set the opacity to 0 on the button before the animation start */
+    animation-fill-mode: backwards;
+}
