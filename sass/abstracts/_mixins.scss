@@ -1,0 +1,9 @@
+// fix the height problem when using float
+@mixin clearfix{
+    &::after{
+        // make this element disappear
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
