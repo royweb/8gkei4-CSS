@@ -22,10 +22,25 @@
 
     .col-1-of-2{
         width: calc((100% - #{$gutter-horizaontal}) / 2);
-        
     }
 
     .col-1-of-3{
         width: calc((100% - 2 * #{$gutter-horizaontal}) / 3);
+    }
+
+    .col-2-of-3{
+        width: calc(2 * ((100% - 2 * #{$gutter-horizaontal}) / 3) + #{$gutter-horizaontal});
+    }
+
+    .col-1-of-4{
+        width: calc((100% - 3 * #{$gutter-horizaontal}) / 4);
+    }
+
+    .col-2-of-4{
+        width: calc(2 * ((100% - 3 * #{$gutter-horizaontal}) / 4) + #{$gutter-horizaontal});
+    }
+
+    .col-3-of-4{
+        width: calc(3 * ((100% - 3 * #{$gutter-horizaontal}) / 4) + 2 * #{$gutter-horizaontal});
     }
 }
