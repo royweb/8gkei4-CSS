@@ -1,0 +1,10 @@
+.row{
+    max-width: $grid-width;
+    background-color: #8000ff;
+    margin: 0 auto;
+    
+    // apply to all row expect the last row
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+}

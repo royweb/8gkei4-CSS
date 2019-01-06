@@ -132,6 +132,13 @@ body {
     /* set the opacity to 0 on the button before the animation start */
     animation-fill-mode: backwards; }
 
+.row {
+  max-width: 114rem;
+  background-color: #8000ff;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+
 .header {
   /* make 95% of viewport height */
   height: 95vh;
