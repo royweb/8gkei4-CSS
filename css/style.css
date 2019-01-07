@@ -84,7 +84,16 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #00ffbf, #0040ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .3s; }
+  .heading-secondary:hover {
+    transform: skewY(3deg) skewX(5deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 26, 51, 0.4); }
 
 .btn {
   /* this is behind the button */ }
