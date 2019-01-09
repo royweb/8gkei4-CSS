@@ -95,6 +95,9 @@ body {
     transform: skewY(3deg) skewX(5deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 26, 51, 0.4); }
 
+.u-center-text {
+  text-align: center; }
+
 .btn {
   /* this is behind the button */ }
   .btn:link, .btn:visited {
