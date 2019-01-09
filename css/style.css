@@ -98,6 +98,9 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .btn {
   /* this is behind the button */ }
   .btn:link, .btn:visited {
@@ -151,7 +154,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #8000ff;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -160,7 +162,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: yellow;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
