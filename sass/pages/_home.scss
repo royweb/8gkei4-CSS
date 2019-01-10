@@ -9,4 +9,11 @@
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.8)), url(../img/lake-4.jpe);
     // cover the entire section
     background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    // apply only to the row
+    & > * {
+        transform: skewY(7deg);
+    }
 }
