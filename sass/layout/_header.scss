@@ -9,7 +9,10 @@
     background-position: top;
     position: relative;
 
+    // make clip-path work on all browser
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     /* shape the background iamge */
+    // this does not work in IE or MS Edge
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     &__logo-box{

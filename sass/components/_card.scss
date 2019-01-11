@@ -49,6 +49,10 @@
         height: 23rem;
         // this does not work in IE or MS Edge
         background-blend-mode: color;
+        // make clip-path work on all browser
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        // this does not work in IE or MS Edge
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1{
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/lake-5.jpe);
