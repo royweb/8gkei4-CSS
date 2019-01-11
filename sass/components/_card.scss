@@ -2,6 +2,8 @@
     perspective: 150rem;
     // make it work in firefox
     -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
 
     &__side{
         background-color: red;
@@ -9,6 +11,13 @@
         font-size:2rem;
         height: 50rem;
         transition: all .8s;
+        // absolute will make the parent lose it height
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // hides the back part of the card
+        backface-visibility: hidden;
 
         &--front{
             background-color: red;
