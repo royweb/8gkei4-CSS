@@ -18,6 +18,8 @@
         // hides the back part of the card
         backface-visibility: hidden;
         border-radius: 3px;
+        // makes the image corner the same as the card
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .1);
 
         &--front{
@@ -39,5 +41,17 @@
 
     &:hover &__side--back{
         transform: rotateY(0);
+    }
+
+    // front side of the card
+    &__picture{
+        background-size: cover;
+        height: 23rem;
+        // this does not work in IE or MS Edge
+        background-blend-mode: color;
+
+        &--1{
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/lake-5.jpe);
+        }
     }
 }
