@@ -6,11 +6,10 @@
     height: 50rem;
 
     &__side{
-        background-color: red;
         color: white;
         font-size:2rem;
         height: 50rem;
-        transition: all .8s;
+        transition: all .8s ease;
         // absolute will make the parent lose it height
         position: absolute;
         top: 0;
@@ -18,14 +17,19 @@
         width: 100%;
         // hides the back part of the card
         backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .1);
 
         &--front{
-            background-color: red;
+            background-color: $color-white;
         }
 
         &--back{
-            background-color: green;
             transform: rotateY(180deg);
+
+            &-1{
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
         }
     }
 
