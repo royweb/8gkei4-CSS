@@ -1,0 +1,13 @@
+.card{
+    perspective: 150rem;
+    // make it work in firefox
+    -moz-perspective: 150rem;
+
+    background-color: red;
+    height: 50rem;
+    transition: all .8s;
+
+    &:hover{
+        transform: rotateY(180deg);
+    }
+}
