@@ -72,6 +72,9 @@
 
     &__heading-span{
         padding: 1rem 1.5rem;
+        // apply all the declarations to h4 when it is break into separate line.
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
 
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
