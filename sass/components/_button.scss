@@ -39,6 +39,15 @@
         }    
     }
 
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after{
+            background-color: $color-primary;
+        }    
+    }
+
     /* this is behind the button */
     &::after{
         content: "";
