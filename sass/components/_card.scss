@@ -30,6 +30,14 @@
             &-1{
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
+
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
         }
     }
 
@@ -55,7 +63,14 @@
         &--1{
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/lake-5.jpe);
         }
+        
+        &--2{
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/lake-6.jpe);
+        }
 
+        &--3{
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/lake-7.jpe);
+        }
     }
 
     &__heading{
@@ -77,8 +92,15 @@
         box-decoration-break: clone;
 
         &--1{
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
-            
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .5), rgba($color-secondary-dark, .5)); 
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .5), rgba($color-tertiary-dark, .5)); 
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .5), rgba($color-primary-dark, .5)); 
         }
     }
 

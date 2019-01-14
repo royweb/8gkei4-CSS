@@ -209,6 +209,10 @@ body {
       transform: rotateY(-180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #DAA520, #8B4513); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #90EE90, #3CB371); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #00ffbf, #0040ff); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
@@ -221,6 +225,10 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #DAA520, #8B4513), url(../img/lake-5.jpe); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #90EE90, #3CB371), url(../img/lake-6.jpe); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #00ffbf, #0040ff), url(../img/lake-7.jpe); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -236,7 +244,11 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(218, 165, 32, 0.85), rgba(139, 69, 19, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(218, 165, 32, 0.5), rgba(139, 69, 19, 0.5)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.5), rgba(60, 179, 113, 0.5)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(0, 255, 191, 0.5), rgba(0, 64, 255, 0.5)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
