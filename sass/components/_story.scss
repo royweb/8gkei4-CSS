@@ -5,12 +5,12 @@
     background-color: $color-white;
     border-radius: 3px;
     padding: 6rem;
+    padding-left: 8.5rem;
     font-size: $default-font-size;
 
     &__shape{
         width: 15rem;
         height: 15rem;
-        background-color: red;
         float: left;
         -webkit-shape-outside: circle(50% at 50% 50%);
         // this does not work in firefox, IE, and edge
@@ -18,5 +18,11 @@
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
+        transform: translateX(-2.5rem);
+    }
+
+    &__img{
+        // this height refer to the &__shape height
+        height: 100%;
     }
 }
