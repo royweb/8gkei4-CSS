@@ -7,6 +7,8 @@
     padding: 6rem;
     padding-left: 8.5rem;
     font-size: $default-font-size;
+    // rotate it
+    transform: skewX(-12deg);
 
     &__shape{
         width: 15rem;
@@ -18,11 +20,15 @@
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-2.5rem);
+        transform: translateX(-2.5rem) skewX(12deg);
     }
 
     &__img{
         // this height refer to the &__shape height
         height: 100%;
+    }
+
+    &__text{
+        transform: skewX(12deg);
     }
 }
