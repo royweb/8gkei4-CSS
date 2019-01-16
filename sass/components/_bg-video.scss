@@ -5,5 +5,14 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: .5;;
+    opacity: .5;
+    // fix the object-fit problem on the width
+    overflow: hidden;
+
+    &__content{
+        height: 100%;
+        width: 100%;
+        // fill the entire parent and maintain the same ratio
+        object-fit: cover;
+    }
 }
