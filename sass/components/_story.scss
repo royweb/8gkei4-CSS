@@ -27,6 +27,8 @@
     &__img{
         // this height refer to the &__shape height
         height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        transition: all 1s;
     }
 
     &__text{
@@ -51,4 +53,8 @@
         opacity: 1;
         transform: translate(-50%, -50%);
     }
+
+    &:hover &__img{
+        transform: translateX(-4rem) scale(1);
+    }  
 }
