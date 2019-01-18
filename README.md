@@ -2,6 +2,14 @@ From Udemy - Advanced CSS and SASS by Jonas Schmedtmann
 --------------------------------------------------------
 Practicing on how to use css.
 
+Book Section
+--------------------------------------------------------
+- Add linear-gradient with half of the background image white and other half transparent
+- Add form, input field, and radio button
+- Modify the default style of input field and placeholder
+- Add animation to show or hide label
+- Add custom radio buttons with animation
+
 Story Section
 --------------------------------------------------------
 - Add story text and style the story shape
