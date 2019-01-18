@@ -36,6 +36,22 @@
     }
 
     &__label{
-
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        // block allow you to use box model properties
+        display: block;
+        transition: all .5s
+    }
+    // + is abjacent sibling selector
+    // ~ is general sibling selector
+    // label must be below the input field
+    &__input:placeholder-shown + &__label{
+        // for animate the effect
+        opacity: 0;
+        // make the label disappear instead of being invisible
+        visibility: hidden;
+        transform: translateY(-4rem);
     }
 }
