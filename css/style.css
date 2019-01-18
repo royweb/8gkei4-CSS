@@ -404,7 +404,7 @@ body {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: -.3rem; }
   .form__radio-button::after {
     content: "";
     display: block;
@@ -415,7 +415,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .5s; }
+
+.form__radio-input:checked + .form__radio-label .form__radio-button::after {
+  opacity: 1; }
 
 .story {
   width: 75%;
