@@ -29,6 +29,10 @@
             box-shadow: 0 1rem 2rem rgba($color-black, .5);
             border-bottom: 3px solid $color-primary;
         }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $color-secondary-light;
+        }
     }
 
     &__label{
