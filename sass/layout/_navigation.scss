@@ -26,19 +26,20 @@
         // radial-gradient start in the middle of the element
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
-        transition: transform .8s;
+        // cubic-bezier for custom animation timing
+        transition: transform .8s cubic-bezier(.8,.07,0,1.17);
     }
 
     &__nav{
         height: 100vh;
         position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         z-index: 1500;
 
         opacity: 0;
         width: 0;
-        transition: all .5s;
+        transition: all .5s cubic-bezier(.31,1.57,.54,-0.29);
     }
 
     &__list{
