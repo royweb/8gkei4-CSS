@@ -2,6 +2,13 @@ From Udemy - Advanced CSS and SASS by Jonas Schmedtmann
 --------------------------------------------------------
 Practicing on how to use css.
 
+Footer Section
+--------------------------------------------------------
+- Add Footer
+- Style the logo
+- Style and slightly rotate the list when hover
+- Add two border lines on top of the footer navigation and the copyright
+
 Book Section
 --------------------------------------------------------
 - Add linear-gradient with half of the background image white and other half transparent
