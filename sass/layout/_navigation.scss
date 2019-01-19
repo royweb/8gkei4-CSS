@@ -14,6 +14,7 @@
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($color-black, .3);
         text-align: center;
+        cursor: pointer;
     }
 
     &__background{
@@ -112,6 +113,7 @@
             content: "";
             position: absolute;
             left: 0;
+            transition: all .3s;
         }
 
         &::before{
@@ -121,5 +123,29 @@
         &::after{
             top: .8rem;
         }
+    }
+
+    &__button:hover &__icon::before{
+        top: -1.2rem;
+    }
+
+    &__button:hover &__icon::after{
+        top: 1.2rem;
+    }
+
+    // select the button and the icon
+    // make the middle line disappear when checked
+    &__checkbox:checked + &__button &__icon{
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before{
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after{
+        top: 0;
+        transform: rotate(-135deg);
     }
 }
