@@ -40,5 +40,12 @@
     &__text{
         font-size: 1.4rem;
         margin-bottom: 4rem;
+
+        // split the paragraph into two columns
+        column-count: 2;
+        // space between each columns
+        column-gap: 4rem;
+        // add a border line between each columns
+        column-rule: 1px solid $color-grey-light-2;
     }
 }
