@@ -2,6 +2,15 @@ From Udemy - Advanced CSS and SASS by Jonas Schmedtmann
 --------------------------------------------------------
 Practicing on how to use css.
 
+Navigation
+--------------------------------------------------------
+- Add navigation bar
+- Add navigation button and use checkbox
+- Use cubic-bezier to add custom animation timing
+- Show the navigation list when clicking the navigation button with animation
+- Add the three lines icon on the navigation button
+- Add animation to make the three lines icon form a X shape when the button is clicked
+
 Footer Section
 --------------------------------------------------------
 - Add Footer
