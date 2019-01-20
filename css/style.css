@@ -428,6 +428,19 @@ body {
 .form__radio-input:checked + .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 26, 51, 0.7);
+  z-index: 5000; }
+  .popup__content {
+    width: 75%;
+    background-color: #ffffff;
+    box-shadow: 0 2rem 4rem rgba(0, 26, 51, 0.3); }
+
 .story {
   width: 75%;
   margin: 0 auto;
