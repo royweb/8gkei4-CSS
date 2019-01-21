@@ -15,20 +15,18 @@ html{
     // default bowser size is 16px 
     font-size: 62.5%;
 
-    @include respond(phone){
-        font-size: 50%;
+    // font-size for phone is 50%, there no need write query for phone when tablet portrait is 50%
+
+    @include respond(t-land){ // width < 1200
+        font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
     }
 
-    @include respond(t-port){
-        font-size: 60%;
-    }
-
-    @include respond(t-land){
-        font-size: 70%;
+    @include respond(t-port){ // width < 900
+        font-size: 50%; // 1rem = 8px, 8/16 = 50%
     }
 
     @include respond(b-desk){
-        font-size: 80%;
+        font-size: 75%; // 1 rem = 12, 12/16 = 75%
     }
 }
 
