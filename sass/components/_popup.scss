@@ -17,6 +17,24 @@
         visibility: visible;
     }
 
+    &__close{
+        &:link,
+        &:visited{
+            color: $color-black;
+            position: absolute;
+            top: 1.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .5s;
+            line-height: 1;
+        }
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
     &__content{
         @include absCenter;
 
