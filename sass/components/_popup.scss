@@ -42,10 +42,20 @@
         margin-bottom: 4rem;
 
         // split the paragraph into two columns
+        -moz-column-count: 2;
         column-count: 2;
         // space between each columns
+        -moz-column-gap: 4rem;
         column-gap: 4rem;
         // add a border line between each columns
+        -moz-column-rule: 1px solid $color-grey-light-2;
         column-rule: 1px solid $color-grey-light-2;
+
+        // note - does not work on chrome window
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        // place the hyphens on the paragraph
+        hyphens: auto;
     }
 }
