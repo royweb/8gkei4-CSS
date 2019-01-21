@@ -1,22 +1,30 @@
-/*Note: By default, browers has differnt margin and padding to some elements*/
+// Note: By default, browers has differnt margin and padding to some elements
 
-/*This is the universal selector, it apply to all element*/
+// This is the universal selector, it apply to all element
 *,
 *::after,
 *::before{
     margin: 0;
     padding: 0;
-    /* this will inherit the body */
+    // this will inherit the body 
     box-sizing: inherit;
 }
 
 html{
-    /* 1 rem is equal to 10px */
-    /* default bowser size is 16px */
+    // 1 rem is equal to 10px 
+    // default bowser size is 16px 
     font-size: 62.5%;
+
+    @media(max-width: 600px){
+        font-size: 50%;
+    }
+
+    @include respond-phone{
+        font-size: 50%;
+    }
 }
 
 body{
-    /*This will prevent the padding from being added to the width and height of the box*/
+    //This will prevent the padding from being added to the width and height of the box
     box-sizing: border-box;
 }

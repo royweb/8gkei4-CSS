@@ -1,3 +1,10 @@
+/*
+0 - 600px : phone
+600 - 900px : Tablet portrait
+900 - 1200px : Tablet landscape
+1200 - 1800px : Desktop
+1800px + : Big Desktop
+*/
 @keyframes moveInLeft {
   /* start of the animation */
   0% {
@@ -32,23 +39,23 @@
     opacity: 1;
     transform: translate(0); } }
 
-/*Note: By default, browers has differnt margin and padding to some elements*/
-/*This is the universal selector, it apply to all element*/
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  /* this will inherit the body */
   box-sizing: inherit; }
 
 html {
-  /* 1 rem is equal to 10px */
-  /* default bowser size is 16px */
   font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
-  /*This will prevent the padding from being added to the width and height of the box*/
   box-sizing: border-box; }
 
 body {
