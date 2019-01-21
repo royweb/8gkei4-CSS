@@ -6,6 +6,16 @@
     left: 0;
     background-color: rgba($color-black, 0.7);
     z-index: 5000;
+    opacity: 0;
+    // hide the popup
+    visibility: hidden;
+    transition: all .5s;
+
+    &:target{
+        // show the popup
+        opacity: 1;
+        visibility: visible;
+    }
 
     &__content{
         @include absCenter;
