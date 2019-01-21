@@ -9,7 +9,7 @@
     opacity: 0;
     // hide the popup
     visibility: hidden;
-    transition: all .5s;
+    transition: all .3s;
 
     &__content{
         @include absCenter;
@@ -20,6 +20,11 @@
         border-radius: 3px;
         display: table;
         overflow: hidden;
+        opacity: 0;
+        // note: you can only use one transform per selector otherwise you will overwrite the previous transform
+        transform: translate(-50%, -50%) scale(.2);
+        // second timer is for delay
+        transition: all .5s .2s;
     }
 
     &__left{
@@ -67,6 +72,11 @@
         // show the popup
         opacity: 1;
         visibility: visible;
+    }
+
+    &:target &__content{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
     }
 
     &__close{
