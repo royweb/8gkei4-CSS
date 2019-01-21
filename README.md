@@ -2,6 +2,14 @@ From Udemy - Advanced CSS and SASS by Jonas Schmedtmann
 --------------------------------------------------------
 Practicing on how to use css.
 
+Popup
+--------------------------------------------------------
+- Add popup
+- Use table-cell display and vertical-align to format the layout of the popup content
+- Use column count, gap, and rule to format and split the content paragraph into two columns
+- Use anchor and target to show the popup and close it
+- Add animation that make the popup appear expanding toward the screen when clicked
+
 Navigation
 --------------------------------------------------------
 - Add navigation bar
