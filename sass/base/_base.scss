@@ -15,12 +15,20 @@ html{
     // default bowser size is 16px 
     font-size: 62.5%;
 
-    @media(max-width: 600px){
+    @include respond(phone){
         font-size: 50%;
     }
 
-    @include respond-phone{
-        font-size: 50%;
+    @include respond(t-port){
+        font-size: 60%;
+    }
+
+    @include respond(t-land){
+        font-size: 70%;
+    }
+
+    @include respond(b-desk){
+        font-size: 80%;
     }
 }
 

@@ -24,7 +24,25 @@
 1800px + : Big Desktop
 */
 
-@mixin respond-phone{
-    // @content is content directive
-    @media(max-width: 600px){ @content };
+// note -  em is better to use than rem in media queries
+// 1em = 16px
+
+// breakpoint can take the arguements of phone, t-port, t-land, b-desk
+@mixin respond($breakpoint){
+    @if $breakpoint == phone{
+        // 600px
+        @media(max-width: 37.5em){ @content };
+    }
+    @if $breakpoint == t-port{
+        // 900px
+        @media(max-width: 56.25em){ @content };
+    }
+    @if $breakpoint == t-land{
+        // 1200px
+        @media(max-width: 75em){ @content };
+    }
+    @if $breakpoint == b-desk{
+        // 1800px
+        @media(min-width: 112.5em){ @content };
+    }
 }
