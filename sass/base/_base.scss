@@ -33,4 +33,9 @@ html{
 body{
     //This will prevent the padding from being added to the width and height of the box
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(t-port){ 
+        padding: 0;
+    }
 }
