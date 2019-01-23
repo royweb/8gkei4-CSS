@@ -5,6 +5,14 @@
     // apply to all row expect the last row
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
+
+        @include respond(t-port){
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+    @include respond(t-port){
+        max-width: 45rem;
     }
 
     @include clearfix;
@@ -15,6 +23,15 @@
         
         &:not(:last-child){
             margin-right: $gutter-horizaontal;
+
+            @include respond(t-port){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include respond(t-port){
+            width: 100% !important;
         }
     }
 
