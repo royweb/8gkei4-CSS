@@ -1,19 +1,24 @@
 .header{
-    /* make 95% of viewport height */
+    // make 95% of viewport height
     height: 95vh;
-    /* to right means start light color from left and dark color from the right */
+    // to right means start light color from left and dark color from the right
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.8)), url(../img/background.jpg);
-    /* adjust the size of the image to fit the element that is inside of the box */
+    // adjust the size of the image to fit the element that is inside of the box
     background-size: cover;
-    /* image at the top will stay the same when resizing the browers */
+    // image at the top will stay the same when resizing the browers
     background-position: top;
     position: relative;
 
     // make clip-path work on all browser
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    /* shape the background iamge */
+    // shape the background iamge 
     // this does not work in IE or MS Edge
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    @include respond(phone){
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
 
     &__logo-box{
         position: absolute;

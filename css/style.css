@@ -571,6 +571,9 @@ body {
   background-color: #00ffbf;
   padding: 5rem 0;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -581,6 +584,10 @@ body {
     border-top: 1px solid #0040ff;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -604,6 +611,10 @@ body {
     padding-top: 2rem;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .row {
   max-width: 114rem;
@@ -615,7 +626,8 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 45rem; } }
+      max-width: 45rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -645,18 +657,17 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  /* make 95% of viewport height */
   height: 95vh;
-  /* to right means start light color from left and dark color from the right */
   background-image: linear-gradient(to right bottom, rgba(0, 255, 191, 0.5), rgba(0, 64, 255, 0.8)), url(../img/background.jpg);
-  /* adjust the size of the image to fit the element that is inside of the box */
   background-size: cover;
-  /* image at the top will stay the same when resizing the browers */
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  /* shape the background iamge */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -685,6 +696,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 26, 51, 0.3);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -696,6 +715,14 @@ body {
   background-image: radial-gradient(#00ffbf, #0040ff);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.8, 0.07, 0, 1.17); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;

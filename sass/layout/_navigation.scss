@@ -15,6 +15,16 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .3);
         text-align: center;
         cursor: pointer;
+
+        @include respond(t-port){
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond(phone){
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background{
@@ -30,6 +40,16 @@
         z-index: 1000;
         // cubic-bezier for custom animation timing
         transition: transform .8s cubic-bezier(.8,.07,0,1.17);
+
+        @include respond(t-port){
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include respond(phone){
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav{
