@@ -150,4 +150,41 @@
         font-size: 6rem;
         font-weight: 100;
     }
+
+
+    @include respond(t-port){
+        height: auto;
+    
+        &__side{
+            height: auto;
+            position: relative;
+            border-radius: 3px;
+    
+            &--back{
+                transform: rotateY(0);
+            }
+        }
+    
+        &:hover &__side--front{
+            transform: rotateY(0);
+        }
+
+        // back side of the card
+        &__cta{
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 4rem;
+        }
+    
+        &__price-box{
+            margin-bottom: 3rem;
+        }
+    
+        &__price-value{
+            font-size: 6rem;
+        }
+    }
 }
