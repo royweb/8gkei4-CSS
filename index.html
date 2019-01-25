@@ -304,8 +304,12 @@
         </main>
         <footer class="footer">
             <div class="footer__logo-box">
-                <!-- density switching -->
-                <img srcset="img/logo-1x.png 1x, img/logo-2x.png 2x" alt="Logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <!-- art direction : allows you to use media queries to switch image -->
+                    <source srcset="img/logo-small-1x.png 1x, img/logo-small-2x.png 2x"" media="(max-width: 37.5em)">
+                    <!-- density switching -->
+                    <img srcset="img/logo-1x.png 1x, img/logo-2x.png 2x" alt="Logo">
+                </picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
