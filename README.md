@@ -2,6 +2,14 @@ From Udemy - Advanced CSS and SASS by Jonas Schmedtmann
 --------------------------------------------------------
 Practicing on how to use css.
 
+Media Queries
+--------------------------------------------------------
+- Define a mixin for the max-width and min-width for each screen size using em
+- Add media queries for composition to display the images side by side
+- Add media queries for feature-box to display the box vertically
+- Add media queries for card to display the back of the card below the font of the card and change styles
+- Add media queries for story and form
+
 Popup
 --------------------------------------------------------
 - Add popup
