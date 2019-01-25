@@ -64,9 +64,32 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
+                            <!-- resolution switching -->
+                            <!-- Let the bowser know which image to download-->
+                            <img srcset="img/lake-1-small.jpe 300w, img/lake-1.jpe 1000w"
+                                size="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo1"
+                                class="composition__photo composition__photo--p1"
+                                src="img/lake-1.jpe">
+
+                            <img srcset="img/lake-2-small.jpe 300w, img/lake-2.jpe 1000w"
+                                size="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo2"
+                                class="composition__photo composition__photo--p2"
+                                src="img/lake-2.jpe">
+
+                            <img srcset="img/lake-3-small.jpe 300w, img/lake-3.jpe 1000w"
+                                size="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo3"
+                                class="composition__photo composition__photo--p3"
+                                src="img/lake-3.jpe">
+
+                            <!-- 
                             <img src="img/lake-1.jpe" alt="Photo 1" class="composition__photo composition__photo--p1">
                             <img src="img/lake-2.jpe" alt="Photo 2" class="composition__photo composition__photo--p2">
                             <img src="img/lake-3.jpe" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            -->
+
                         </div>
                     </div>
                 </div>
@@ -308,7 +331,7 @@
                     <!-- art direction : allows you to use media queries to switch image -->
                     <source srcset="img/logo-small-1x.png 1x, img/logo-small-2x.png 2x"" media="(max-width: 37.5em)">
                     <!-- density switching -->
-                    <img srcset="img/logo-1x.png 1x, img/logo-2x.png 2x" alt="Logo">
+                    <img srcset="img/logo-1x.png 1x, img/logo-2x.png 2x" alt="Logo" src="img/logo-2x.png 2x">
                 </picture>
             </div>
             <div class="row">
