@@ -2,6 +2,13 @@ From Udemy - Advanced CSS and SASS by Jonas Schmedtmann
 --------------------------------------------------------
 Practicing on how to use css.
 
+Responsive Image
+--------------------------------------------------------
+- Use density switching on the logo
+- Use art direction to switch image size
+- Use resolution switching to switch image
+- Add media query for resolution to switch image
+
 Media Queries
 --------------------------------------------------------
 - Define a mixin for the max-width and min-width for each screen size using em
