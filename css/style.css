@@ -748,6 +748,9 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media (min-resolution: 192dpi) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(0, 26, 51, 0.5), rgba(0, 64, 255, 0.8)), url(../img/background-big.jpg); } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
