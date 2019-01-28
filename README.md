@@ -1,6 +1,14 @@
 From Udemy - Advanced CSS and SASS by Jonas Schmedtmann
 --------------------------------------------------------
-Practicing on how to use css.
+Practicing on how to use scss.
+This is a fictional website where they give tours on lakes around the world
+
+Other
+--------------------------------------------------------
+- Use graceful degradation to change styles on different browser
+- Use autoprefixer dependencies to add all the support for most of the browser verison
+- Use compress from node-sass dependencies to compress the css file
+- Use npm-run-all to run all scripts
 
 Responsive Image
 --------------------------------------------------------
