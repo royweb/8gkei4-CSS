@@ -28,21 +28,22 @@
 // 1em = 16px
 
 // breakpoint can take the arguements of phone, t-port, t-land, b-desk
+// only screen apply to screen only and not when printing this website
 @mixin respond($breakpoint){
     @if $breakpoint == phone{
         // 600px
-        @media(max-width: 37.5em){ @content };
+        @media only screen and (max-width: 37.5em){ @content };
     }
     @if $breakpoint == t-port{
         // 900px
-        @media(max-width: 56.25em){ @content };
+        @media only screen and (max-width: 56.25em){ @content };
     }
     @if $breakpoint == t-land{
         // 1200px
-        @media(max-width: 75em){ @content };
+        @media only screen and (max-width: 75em){ @content };
     }
     @if $breakpoint == b-desk{
         // 1800px
-        @media(min-width: 112.5em){ @content };
+        @media only screen and (min-width: 112.5em){ @content };
     }
 }
