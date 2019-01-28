@@ -14,6 +14,7 @@
         left: 0;
         width: 100%;
         // hides the back part of the card
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
         // makes the image corner the same as the card

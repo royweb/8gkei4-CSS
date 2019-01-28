@@ -10,7 +10,15 @@
     // hide the popup
     visibility: hidden;
     transition: all .3s;
-
+    
+    // graceful degradation
+    // apply to these changes if the browser support this property
+    @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)){
+        // work in safari
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
     &__content{
         @include absCenter;
 
