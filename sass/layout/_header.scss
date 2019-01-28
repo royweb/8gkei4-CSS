@@ -1,6 +1,6 @@
 .header{
-    // make 95% of viewport height
-    height: 95vh;
+    // make 85% of viewport height
+    height: 85vh;
     // to right means start light color from left and dark color from the right
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.8)), url(../img/background.jpg);
     // adjust the size of the image to fit the element that is inside of the box
@@ -14,6 +14,17 @@
     // shape the background iamge 
     // this does not work in IE or MS Edge
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    // feature query
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+        // make 95% of viewport height
+        height: 95vh;
+        // make clip-path work on all browser
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        // shape the background iamge 
+        // this does not work in IE or MS Edge
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    }
 
     // switching image based on resolution
     @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em), (min-width: 125em){
