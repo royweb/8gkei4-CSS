@@ -754,7 +754,7 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em), (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(0, 255, 191, 0.5), rgba(0, 64, 255, 0.8)), url(../img/background-big.jpg); } }
   @media (max-width: 37.5em) {
