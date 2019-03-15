@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- this is important for responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.min.css">
+        <link rel="shortcut icon" type="image/png" href="img/logo-2x.png">
+
+        <title>RW Lake Tour</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Tour</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Features</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular Tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="img/logo-2x.png" alt="Logo" class="header__logo">
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Find Lake</span>
+                    <span class="heading-primary--sub">where you relax</span>
+                </h1>
+                <a href="#" class="btn btn--white btn--animated">Discover Our Tour</a>
+            </div>
+        </header>
+        <main>
+            <section class="section-about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Refreshy tours for curious people
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Beautiful colorful of the reflection of the lake</h3>
+                        <p class="paragraph">You will see rainbow color reflection of the lake during the day when it is sunny.  You can also see a reflection of yourself like a mirror.</p>
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Feel and hear the flow of the lake</h3>
+                        <p class="paragraph">Let the lake relieve your stress and empty your mind.  The lake is the best place to meditate, relex, or even write your own book.</p>
+
+                        <a href="#" class="btn-text">Learn More &rarr;</a>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <!-- resolution switching -->
+                            <!-- Let the bowser know which image to download-->
+                            <img srcset="img/lake-1-small.jpe 300w, img/lake-1.jpe 1000w"
+                                size="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo1"
+                                class="composition__photo composition__photo--p1"
+                                src="img/lake-1.jpe">
+
+                            <img srcset="img/lake-2-small.jpe 300w, img/lake-2.jpe 1000w"
+                                size="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo2"
+                                class="composition__photo composition__photo--p2"
+                                src="img/lake-2.jpe">
+
+                            <img srcset="img/lake-3-small.jpe 300w, img/lake-3.jpe 1000w"
+                                size="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                alt="Photo3"
+                                class="composition__photo composition__photo--p3"
+                                src="img/lake-3.jpe">
+
+                            <!-- 
+                            <img src="img/lake-1.jpe" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/lake-2.jpe" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/lake-3.jpe" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-features">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fas fa-globe"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Expolore the world</h3>
+                            <p class="feature-box__text">There are many differnet lakes around the world.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fas fa-compass"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Meet the lake</h3>
+                            <p class="feature-box__text">These lake we select are clean and fun</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fas fa-map"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
+                            <p class="feature-box__text">We will guide you to your lake destination</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fas fa-heart"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Live a Healthier Life</h3>
+                            <p class="feature-box__text">Enjoy the view of waves to clear your stress</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-tours">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        Current popular tours
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--1">
+                                        Lake in Autumn
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>5 day tours</li>
+                                        <li>Up to 30 people</li>
+                                        <li>2 tour guides</li>
+                                        <li>Good hotels</li>
+                                        <li>5 Free meals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-1">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">259</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--2">
+                                        Lake in Spring
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>7 day tours</li>
+                                        <li>Up to 50 people</li>
+                                        <li>5 tour guides</li>
+                                        <li>Decent tents</li>
+                                        <li>7 Free meals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">359</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--3">
+                                        Lake in Winter
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>3 day tours</li>
+                                        <li>Up to 20 people</li>
+                                        <li>1 tour guides</li>
+                                        <li>Warm hotels</li>
+                                        <li>3 Free meals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-3">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">459</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-huge">
+                    <a href="#" class="btn btn--green">Discover All Tours</a>
+                </div>
+            </section>
+            <section class="section-stories">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/Lake-vibes.mp4" type="video/mp4" >
+                        <source src="img/Lake-vibes.webm" type="video/webm" >
+                        Change your browser
+                    </video>
+                </div>
+
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        We make people full of joy
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <!-- figure element is for image -->
+                        <figure class="story__shape">
+                            <img src="img/lake-8.jpe" alt="Person on a tour" class="story__img">
+                            <figcaption class="story__caption">Ken Sevcar</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">I had the best time of my life</h3>
+                            <p>
+                                The lake was beautiful in Wyoming.  The water is very clean and filled with beautiful fishes.  It was quite which is a good place to read my favorite books.  The food was yummy at the hotel. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img src="img/lake-9.jpe" alt="Person on a tour" class="story__img">
+                            <figcaption class="story__caption">June Cat</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Best experience of all time</h3>
+                            <p>
+                                I had a great time at the lake.  I enjoy seeing the reflection of the lake.  It clear my mind so I can focus better.  The meal at the city that is near this lake was great and delicious.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-huge">
+                    <a href="#" class="btn-text">Read all stories &rarr;</a>
+                </div>
+            </section>
+            <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                        Start planning now
+                                    </h2>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="Email" id="email" required>
+                                    <label for="email" class="form__label">Email</label>
+                                </div>
+                                <div class="form__group u-margin-bottom-medium">
+                                    <div class="form__radio-group">
+                                        <!-- You cannot style these html radio buttons -->
+                                        <input type="radio" class="form__radio-input" id="small" name="size">
+                                        <label for="small" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Small Tour Group
+                                        </label>
+                                    </div>
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="big" name="size">
+                                        <label for="big" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Big Tour Group
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <button class="btn btn--green">Submit &rarr;</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <picture class="footer__logo">
+                    <!-- art direction : allows you to use media queries to switch image -->
+                    <source srcset="img/logo-small-1x.png 1x, img/logo-small-2x.png 2x"" media="(max-width: 37.5em)">
+                    <!-- density switching -->
+                    <img srcset="img/logo-1x.png 1x, img/logo-2x.png 2x" alt="Logo" src="img/logo-2x.png 2x">
+                </picture>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Conact Us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        This design is based on <a href="#" class="footer__link">Jonas Schmedtmann</a> online course <a href="#" class="footer__link">Advanced CSS and SASS</a>. Copyright C2019 RW Lake Tour
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/lake-8.jpe" alt="Tour Photo" class="popup_img">
+                    <img src="img/lake-9.jpe" alt="Tour Photo" class="popup_img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Note &ndash; By booking this</h3>
+                    <p class="popup__text">You must arrive the departure area on time or else you will be left behind.  We are not responisble for any lost item or belonging. This is nonrefundable.  If you have any questions, please email us</p>
+                    <a href="#" class="btn btn--green">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
